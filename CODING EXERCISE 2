@@ -1,0 +1,25 @@
+package selfProgramming;
+import java.util.Scanner;
+public class MethodOverloading {
+
+	public static int readAge() {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		int age = 0;
+		do {
+			System.out.println("Please enter your age(1-100): ");
+			age = input.nextInt();
+		}while ((age<1) || (age>100));//valid age check
+		return age;
+	}
+	public static int readAge(int max) {
+	Scanner input = new Scanner (System.in);
+			int age = 0;
+	do {
+		System.out.println("Please enter your age (1-"+max+"): ");
+		age = input.nextInt();
+	}while ((age<1) || (age>max)); //valid age check
+	return age;
+	}
+
+}
