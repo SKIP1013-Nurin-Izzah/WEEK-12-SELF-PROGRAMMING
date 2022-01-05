@@ -1,0 +1,17 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class Square2Slide27 {
+
+	public static int readAge() {
+		Scanner read = new Scanner(System.in);
+				int age = 0;
+		do {
+			System.out.println("Please enter your age(1-100): ");
+			age = read.nextInt();
+		
+		}while ((age<1)|| (age>100)); //valid age check
+		return age;//return the number to main
+	}
+}
