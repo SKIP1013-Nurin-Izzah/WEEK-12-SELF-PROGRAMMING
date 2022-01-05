@@ -1,0 +1,16 @@
+package selfProgramming;
+
+public class DefiningCallingAMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("I have a message for you.");
+		showMessage();
+		System.out.println("That's all folks!");
+	}
+	public static void showMessage()
+	{
+System.out.println("Helo Worl.");
+}
+}
